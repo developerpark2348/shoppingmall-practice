@@ -16,8 +16,10 @@ function Detail(props){
 
     useEffect(()=>{
         setTimeout(()=>{
-            
+
         }, 2000)
+
+        return function 함수명(){실행할코드}
     });
 
     let { id } = useParams();
