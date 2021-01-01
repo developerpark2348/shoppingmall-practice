@@ -1,16 +1,40 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
+import styled from 'styled-components';
+import './Detail.css'
+
+let 박스 = styled.div`
+    padding: 20px;
+`;
+
+let 제목 = styled.h4`
+    font-size: 25px;
+    color: ${ props => props.색상 }
+`;
 
 function Detail(props){
+
+    useEffect(()=>{
+        setTimeout(()=>{
+            
+        }, 2000)
+    });
 
     let { id } = useParams();
     let 찾은상품 = props.shoes.find(function(상품){
         return 상품.id == id
     })
-    let history = useHistory();
+    let history = 
+    useHistory();
 
     return(
       <div className="container">
+          <박스>
+            <제목 색상="black">상세페이지</제목>
+          </박스>
+     <div className="my-alert2">
+         <p>재고가 얼마 남지 않았습니다.</p>
+     </div>
             <div className="row">
               <div className="col-md-6">
                 <img src="https://codingapple1.github.io/shop/shoes1.jpg" width="100%" />
