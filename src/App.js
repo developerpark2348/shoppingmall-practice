@@ -60,11 +60,12 @@ function App() {
 
       </Route>
 
-      <Route path="/detail">
+      <Route path="/detail/:id">
         
-        <Detail />
+        <Detail shoes={shoes}/>
 
       </Route>
+
 
       <Route path="/:id">
         <div>아무거나 적었을때 보여줘</div>
