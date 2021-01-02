@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">Shoe Shop</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/">Shoe Shop</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
