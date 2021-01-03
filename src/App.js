@@ -8,6 +8,7 @@ import Detail from './Detail.js';
 import axios from 'axios';
 import Cart from './Cart.js';
 import { Link, Route, Switch } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 function App() {
 
@@ -100,8 +101,9 @@ function App() {
 }
 
 function Card(props){
+  let history = useHistory();
   return(
-    <div className="col-md-4">
+    <div className="col-md-4" onClick= { ()=> { history.push('/detail/' + props.shoes.id) }}>
       <img src={ 'https://codingapple1.github.io/shop/shoes' + (props.i + 1) +'.jpg' } width="100%"/>
       <h4>{props.shoes.title}</h4>
       <p>{props.shoes.content} & {props.shoes.price}</p>

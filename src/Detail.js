@@ -84,7 +84,7 @@ function Detail(props){
               <TabContent 누른탭={누른탭} 스위치변경={스위치변경}/>
             </CSSTransition>
 
-            <button onClick={()=>{ props.dispatch( { type : '항목추가', payload : {id : 2, name : '새로운상품', quan : 1}}); history.push('/Cart')}}>주문하기</button>
+            <button onClick={()=>{ props.dispatch( { type : '항목추가', payload : {id : 찾은상품.id, name : 찾은상품.title, quan : 1}}); history.push('/Cart')}}>주문하기</button>
             
       </div> 
     )

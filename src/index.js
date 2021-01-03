@@ -12,11 +12,11 @@ let 기본state = [{id : 0, name : '멋진신발', quan : 2}, {id : 1, name : '�
 function reducer(state = 기본state, 액션){
   if(액션.type === '수량증가') {
     let copy = [...state];
-    copy[0].quan++;
+    copy[액션.데이터].quan++;
     return copy
   } else if(액션.type === '수량감소') {
     let copy = [...state];
-    copy[0].quan--;
+    copy[액션.데이터].quan--;
     return copy
   } else if(액션.type === '항목추가') {
     let copy = [...state];
