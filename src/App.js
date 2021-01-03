@@ -6,6 +6,7 @@ import './App.css';
 import Data from './data.js';
 import Detail from './Detail.js';
 import axios from 'axios';
+import Cart from './Cart.js';
 
 import { Link, Route, Switch } from 'react-router-dom';
 
@@ -79,6 +80,11 @@ function App() {
 
       </Route>
 
+      <Route path="/cart">
+
+        <Cart></Cart>
+
+      </Route>
 
       <Route path="/:id">
         <div>아무거나 적었을때 보여줘</div>
