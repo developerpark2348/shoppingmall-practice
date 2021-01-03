@@ -7,7 +7,6 @@ import Data from './data.js';
 import Detail from './Detail.js';
 import axios from 'axios';
 import Cart from './Cart.js';
-
 import { Link, Route, Switch } from 'react-router-dom';
 
 function App() {

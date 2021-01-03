@@ -41,11 +41,11 @@ function Cart(props){
     )
 }
 
-function 함수명(state){
+function state를props화(state){
     return {
         state : state.reducer,
         alert열렸니 : state.reducer2
     }
 }
 
-export default connect(함수명)(Cart);
+export default connect(state를props화)(Cart);

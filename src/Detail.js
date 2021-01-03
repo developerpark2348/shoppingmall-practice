@@ -5,7 +5,7 @@ import { useHistory, useParams } from 'react-router-dom';
 import { Nav } from 'react-bootstrap';
 import styled from 'styled-components';
 import './Detail.css'
-
+import { connect } from 'react-redux';
 import { CSSTransition } from 'react-transition-group';
 
 let 박스 = styled.div`
@@ -83,6 +83,8 @@ function Detail(props){
             <CSSTransition in={스위치} classNames="wow" timeout={500}>
               <TabContent 누른탭={누른탭} 스위치변경={스위치변경}/>
             </CSSTransition>
+
+            <button onClick={()=>{ props.dispatch( { type : '항목추가', payload : {id : 2, name : '새로운상품', quan : 1}}); history.push('/Cart')}}>주문하기</button>
             
       </div> 
     )
@@ -110,4 +112,11 @@ function Info(props) {
   )
 }
 
-export default Detail;
+function state를props화(state){
+  return {
+    state : state.reducer,
+    alert열렸니 : state.recuer2
+  }
+}
+
+export default connect(state를props화)(Detail)
