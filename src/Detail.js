@@ -29,11 +29,23 @@ function Detail(props){
     let [스위치, 스위치변경] = useState(false);
 
     useEffect(()=>{
+      var arr = localStorage.getItem('watched');
+      if( arr == null ) { arr = [] } else { arr = JSON.parse(arr); }
+
+      arr.push(id);
+      arr = new Set(arr) //Set자료형으로 변경해줌으로서 중복을 제거해줌.
+      arr = [...arr]; // 괄호를 벗겨줌.
+
+      localStorage.setItem('watched', JSON.stringify(arr));
+
+    }, [] );
+
+    useEffect(()=>{
         let 타이머 = setTimeout(()=>{
           alert변경(false)
           return ()=> { clearTimeout(타이머) }
         }, 2000)
-    },[/*실행 조건을 넣는 칸. [alert, Data]=> alert,Data0가 변경시에만 실행. 여러개 가능 [](꽁백)시 로드되었을때 한번만 실행함.*/]);
+    },[/*실행 조건을 넣는 칸. [alert, Data]=> alert,Data가 변경시에만 실행. 여러개 가능 [](꽁백)시 로드되었을때 한번만 실행함.*/]);
 
     return(
       <div className="container">
@@ -48,6 +60,10 @@ function Detail(props){
           </div>)
         : null
       }
+
+            <div className="Watched">
+              안녕하세요
+            </div>
             <div className="row">
               <div className="col-md-6">
                 <img src="https://codingapple1.github.io/shop/shoes1.jpg" width="100%" />

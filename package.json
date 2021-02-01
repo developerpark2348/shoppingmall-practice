@@ -42,5 +42,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/developerpark2348/shoppingmall-practice-developerpark2348.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/developerpark2348/shoppingmall-practice-developerpark2348/issues"
+  },
+  "homepage": "https://github.com/developerpark2348/shoppingmall-practice-developerpark2348#readme"
 }

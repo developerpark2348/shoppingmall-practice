@@ -42,13 +42,11 @@ function reducer2(state = alert초기값, 액션) {
 let store = createStore( combineReducers({reducer, reducer2}));
 
 ReactDOM.render(
-  <React.StrictMode>
     <BrowserRouter>
       <Provider store={store}>
         <App />
       </Provider>
-    </BrowserRouter>
-  </React.StrictMode>,
+    </BrowserRouter>,
   document.getElementById('root')
 );
 
