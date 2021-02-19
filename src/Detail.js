@@ -61,9 +61,6 @@ function Detail(props){
         : null
       }
 
-            <div className="Watched">
-              안녕하세요
-            </div>
             <div className="row">
               <div className="col-md-6">
                 <img src="https://codingapple1.github.io/shop/shoes1.jpg" width="100%" />
@@ -75,9 +72,7 @@ function Detail(props){
 
                 <Info 재고={props.재고}></Info>
 
-                <button className="btn btn-danger" onClick={()=>{
-                  props.재고변경([9,11,12])
-                }}>주문하기</button> 
+                <button className="btn btn-danger" onClick={()=>{ props.dispatch( { type : '항목추가', payload : {id : 찾은상품.id, name : 찾은상품.title, quan : 1}}); history.push('/Cart')}}>주문하기</button> 
                 <button className="btn btn-danger" onClick={()=>{
                     history.goBack();
                 }}>뒤로가기</button> 
@@ -86,21 +81,19 @@ function Detail(props){
 
             <Nav className="mt-5" variant="tabs" defaultActiveKey="link-0">
               <Nav.Item>
-                <Nav.Link eventKey="link-0" onClick={()=>{ 스위치변경(false); 누른탭변경(0) }}>Option 0</Nav.Link>
+                <Nav.Link eventKey="link-0" onClick={()=>{ 스위치변경(false); 누른탭변경(0) }}>0번 설명</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="link-1" onClick={()=>{ 스위치변경(false); 누른탭변경(1) }}>Option 1</Nav.Link>
+                <Nav.Link eventKey="link-1" onClick={()=>{ 스위치변경(false); 누른탭변경(1) }}>1번 설명</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="link-2" onClick={()=>{ 스위치변경(false); 누른탭변경(2) }}>Option 2</Nav.Link>
+                <Nav.Link eventKey="link-2" onClick={()=>{ 스위치변경(false); 누른탭변경(2) }}>2번 설명</Nav.Link>
               </Nav.Item>
             </Nav>
 
             <CSSTransition in={스위치} classNames="wow" timeout={500}>
               <TabContent 누른탭={누른탭} 스위치변경={스위치변경}/>
             </CSSTransition>
-
-            <button onClick={()=>{ props.dispatch( { type : '항목추가', payload : {id : 찾은상품.id, name : 찾은상품.title, quan : 1}}); history.push('/Cart')}}>주문하기</button>
             
       </div> 
     )
@@ -113,11 +106,11 @@ function TabContent(props){
   });
   
   if (props.누른탭 === 0) {
-  return <div> 0번째 내용입니다. </div>
+  return <div> 0번째 상세 설명 blah blah~ </div>
   } else if (props.누른탭 === 1){
-  return <div> 1번째 내용입니다. </div>
+  return <div> 1번째 상세 설명 blah blah~  </div>
   } else if (props.누른탭 === 2){
-  return <div> 2번째 내용입니다. </div>
+  return <div> 2번째 상세 설명 blah blah~  </div>
   }
 
 }
