@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/shoppingmall_project_react/static/css/main.513fd181.chunk.css",
-    "main.js": "/shoppingmall_project_react/static/js/main.9b95aa6c.chunk.js",
-    "main.js.map": "/shoppingmall_project_react/static/js/main.9b95aa6c.chunk.js.map",
-    "runtime-main.js": "/shoppingmall_project_react/static/js/runtime-main.3ff0d775.js",
-    "runtime-main.js.map": "/shoppingmall_project_react/static/js/runtime-main.3ff0d775.js.map",
-    "static/js/2.9eefe2d3.chunk.js": "/shoppingmall_project_react/static/js/2.9eefe2d3.chunk.js",
-    "static/js/2.9eefe2d3.chunk.js.map": "/shoppingmall_project_react/static/js/2.9eefe2d3.chunk.js.map",
-    "static/js/3.dfab5b3e.chunk.js": "/shoppingmall_project_react/static/js/3.dfab5b3e.chunk.js",
-    "static/js/3.dfab5b3e.chunk.js.map": "/shoppingmall_project_react/static/js/3.dfab5b3e.chunk.js.map",
-    "index.html": "/shoppingmall_project_react/index.html",
-    "static/css/main.513fd181.chunk.css.map": "/shoppingmall_project_react/static/css/main.513fd181.chunk.css.map",
-    "static/js/2.9eefe2d3.chunk.js.LICENSE.txt": "/shoppingmall_project_react/static/js/2.9eefe2d3.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/shoppingmall_project_react/static/media/background.739617fe.jpg"
+    "main.css": "/static/css/main.51bcae81.chunk.css",
+    "main.js": "/static/js/main.9b95aa6c.chunk.js",
+    "main.js.map": "/static/js/main.9b95aa6c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.116b00c0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.116b00c0.js.map",
+    "static/js/2.e6938b7b.chunk.js": "/static/js/2.e6938b7b.chunk.js",
+    "static/js/2.e6938b7b.chunk.js.map": "/static/js/2.e6938b7b.chunk.js.map",
+    "static/js/3.dfab5b3e.chunk.js": "/static/js/3.dfab5b3e.chunk.js",
+    "static/js/3.dfab5b3e.chunk.js.map": "/static/js/3.dfab5b3e.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.51bcae81.chunk.css.map": "/static/css/main.51bcae81.chunk.css.map",
+    "static/js/2.e6938b7b.chunk.js.LICENSE.txt": "/static/js/2.e6938b7b.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/background.739617fe.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.3ff0d775.js",
-    "static/js/2.9eefe2d3.chunk.js",
-    "static/css/main.513fd181.chunk.css",
+    "static/js/runtime-main.116b00c0.js",
+    "static/js/2.e6938b7b.chunk.js",
+    "static/css/main.51bcae81.chunk.css",
     "static/js/main.9b95aa6c.chunk.js"
   ]
 }
